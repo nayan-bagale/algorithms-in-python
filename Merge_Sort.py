@@ -34,5 +34,5 @@ if __name__ == '__main__':
         return [randint(0, max) for _ in range(size)]
 
 
-    temp = createarray()
-    print(merge_sort(temp))
+   
+    print(merge_sort(createarray()))
