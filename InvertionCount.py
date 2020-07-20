@@ -38,12 +38,8 @@ if __name__ == '__main__':
         return [randint(0, max) for _ in range(size)]
 
 
-    temp = [1, 3, 5, 2, 4, 6]  # createarray()
-    ints = open('IntegerArray.txt', 'r')
-    ints_list = list(map(int, ints.read().split('\n')[:-1]))
-    ints.close()
 
-    sorted_array, inversion = merge_sort(temp)
+    sorted_array, inversion = merge_sort(createarray())
 
     print(sorted_array)
     print(inversion)
